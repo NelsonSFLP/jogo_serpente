@@ -6,6 +6,9 @@
 class Comida {
 private:
     cv::Point posicao;
+    int tipoForma;         // 0: círculo, 1: quadrado, 2: triângulo
+    cv::Scalar cor;        // cor aleatória
+    void sortearForma();   // sorteia forma e cor aleatórias
 
 public:
     Comida();
